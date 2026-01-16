@@ -44,20 +44,8 @@ We'll store application data in a MongoDB database. This includes:
 ### **WebSocket**
 WebSocket connections will enable real-time features in the application. When a business owner updates their availability, connected clients will immediately see the changes without refreshing. Business owners will receive instant notifications when new appointments are booked. The system will also show live warnings if multiple users are considering the same time slot simultaneously.
 
-## 🎨 Design Sketches
+## 🎨 Design Sketch
 
-### **1. Landing / Business Selection Page**
-![Landing Page Sketch](images/landing-sketch.jpg)
-*Users select which business they want to interact with or log into their dashboard.*
 
-### **2. Client Booking Interface**
-![Booking Interface](images/booking-sketch.jpg)
-*Interactive calendar showing available slots with service selection and policy display.*
+<img width="1536" height="1024" alt="Design Sketch" src="https://github.com/user-attachments/assets/d24a5c83-04a0-4466-b995-b1cefadb8882" />
 
-### **3. Business Owner Dashboard**
-![Admin Dashboard](images/admin-sketch.jpg)
-*Overview of today's appointments, revenue metrics, and quick action buttons.*
-
-### **4. Mobile Booking View**
-![Mobile View](images/mobile-sketch.jpg)
-*Optimized mobile interface for clients booking on the go.*
