@@ -49,7 +49,6 @@ WebSocket connections will enable real-time features in the application. When a 
 
 ## 🎨 Design Sketches
 
-
 ### Landing Page
 ![Landing Page Design](images/landing-page.svg)
 
