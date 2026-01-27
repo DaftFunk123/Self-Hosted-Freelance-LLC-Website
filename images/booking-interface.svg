@@ -1,23 +1,55 @@
 <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .header { font-size: 16px; font-weight: bold; }
+    .button { font-size: 16px; font-weight: bold; }
+  </style>
   <rect width="600" height="400" fill="#f9f9f9"/>
   <rect x="10" y="10" width="580" height="380" fill="white" stroke="#ddd" rx="10"/>
-  <text x="20" y="40">Jan 2024 [<] [Today] [>]</text>
-  <text x="500" y="40">[User Icon]</text>
+  
+  <!-- Header -->
+  <text x="20" y="35" class="header">Jan 2024 [<] [Today] [>]</text>
+  <rect x="500" y="20" width="70" height="25" fill="#e3f2fd" rx="5"/>
+  <text x="510" y="37">[User Icon]</text>
+  
+  <!-- Calendar Area -->
   <rect x="20" y="60" width="350" height="200" fill="#f0f8ff" stroke="#ccc" rx="5"/>
-  <text x="30" y="80">SUN MON TUE WED THU FRI SAT</text>
+  <text x="30" y="85" font-weight="bold">SUN MON TUE WED THU FRI SAT</text>
+  <text x="30" y="110">   1   2   3   4   5   6   7</text>
+  <text x="30" y="130">  [8]  9  10  11  12  13  14</text>
+  <text x="30" y="150">  15  16 [17] 18  19  20  21</text>
+  <text x="30" y="170">  22  23  24  25  26  27  28</text>
+  <text x="30" y="190">  29  30  31</text>
+  
+  <!-- Service Selection -->
   <rect x="400" y="60" width="170" height="200" fill="#fff8e1" stroke="#ccc" rx="5"/>
-  <text x="410" y="80">SELECT SERVICE:</text>
+  <text x="410" y="85" font-weight="bold">SELECT SERVICE:</text>
+  
   <rect x="420" y="100" width="140" height="25" fill="#e8f5e8" rx="3"/>
   <text x="430" y="118">○ Math Tutoring</text>
+  
   <rect x="420" y="130" width="140" height="25" fill="#e8f5e8" rx="3"/>
   <text x="430" y="148">○ Bounce House</text>
+  
   <rect x="420" y="160" width="140" height="25" fill="#e8f5e8" rx="3"/>
   <text x="430" y="178">○ Music Lesson</text>
+  
+  <!-- Book Now Button -->
   <rect x="450" y="200" width="80" height="40" fill="#50c878" rx="5"/>
-  <text x="490" y="225" text-anchor="middle" fill="white">BOOK NOW</text>
-  <text x="30" y="280">Available Times:</text>
-  <rect x="40" y="290" width="80" height="30" fill="#e3f2fd" rx="5"/>
-  <text x="80" y="310" text-anchor="middle">9:00 AM</text>
-  <rect x="130" y="290" width="80" height="30" fill="#e3f2fd" rx="5"/>
-  <text x="170" y="310" text-anchor="middle">10:00 AM</text>
+  <text x="490" y="225" text-anchor="middle" fill="white" class="button">BOOK NOW</text>
+  
+  <!-- Available Times -->
+  <text x="30" y="285" font-weight="bold">Available Times:</text>
+  
+  <rect x="40" y="295" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="80" y="315" text-anchor="middle">9:00 AM</text>
+  
+  <rect x="130" y="295" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="170" y="315" text-anchor="middle">10:00 AM</text>
+  
+  <rect x="220" y="295" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="260" y="315" text-anchor="middle">2:00 PM</text>
+  
+  <rect x="310" y="295" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="350" y="315" text-anchor="middle">3:00 PM</text>
 </svg>
