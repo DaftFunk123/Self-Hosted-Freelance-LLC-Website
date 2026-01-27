@@ -51,16 +51,20 @@ WebSocket connections will enable real-time features in the application. When a 
 
 ### Landing Page
 ![Landing Page Design](images/landing-page.svg)
+
 *Homepage where users can select a business type or log into their account.*
 
 ### Booking Interface
 ![Booking Interface Design](images/booking-interface.svg)
+
 *Calendar view showing available time slots with service selection options.*
 
 ### Admin Dashboard
 ![Admin Dashboard Design](images/admin-dashboard.svg)
+
 *Business owner view showing appointments, revenue, and management controls.*
 
 ### Mobile View
 ![Mobile Design](images/mobile-view.svg)
+
 *Responsive mobile interface for on-the-go booking.*
