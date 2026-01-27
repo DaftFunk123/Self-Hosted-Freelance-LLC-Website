@@ -1,0 +1,23 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f9f9f9"/>
+  <rect x="10" y="10" width="580" height="380" fill="white" stroke="#ddd" rx="10"/>
+  <text x="20" y="40">Jan 2024 [<] [Today] [>]</text>
+  <text x="500" y="40">[User Icon]</text>
+  <rect x="20" y="60" width="350" height="200" fill="#f0f8ff" stroke="#ccc" rx="5"/>
+  <text x="30" y="80">SUN MON TUE WED THU FRI SAT</text>
+  <rect x="400" y="60" width="170" height="200" fill="#fff8e1" stroke="#ccc" rx="5"/>
+  <text x="410" y="80">SELECT SERVICE:</text>
+  <rect x="420" y="100" width="140" height="25" fill="#e8f5e8" rx="3"/>
+  <text x="430" y="118">○ Math Tutoring</text>
+  <rect x="420" y="130" width="140" height="25" fill="#e8f5e8" rx="3"/>
+  <text x="430" y="148">○ Bounce House</text>
+  <rect x="420" y="160" width="140" height="25" fill="#e8f5e8" rx="3"/>
+  <text x="430" y="178">○ Music Lesson</text>
+  <rect x="450" y="200" width="80" height="40" fill="#50c878" rx="5"/>
+  <text x="490" y="225" text-anchor="middle" fill="white">BOOK NOW</text>
+  <text x="30" y="280">Available Times:</text>
+  <rect x="40" y="290" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="80" y="310" text-anchor="middle">9:00 AM</text>
+  <rect x="130" y="290" width="80" height="30" fill="#e3f2fd" rx="5"/>
+  <text x="170" y="310" text-anchor="middle">10:00 AM</text>
+</svg>

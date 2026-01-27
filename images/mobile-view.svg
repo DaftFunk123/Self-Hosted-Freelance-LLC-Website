@@ -1,0 +1,43 @@
+<svg width="300" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="500" fill="#f0f0f0"/>
+  <rect x="10" y="10" width="280" height="480" fill="white" stroke="#ccc" rx="20"/>
+  
+  <!-- Status Bar -->
+  <rect x="20" y="20" width="260" height="30" fill="#333"/>
+  <text x="40" y="40" fill="white" font-size="14">⌚ ScheduleSync</text>
+  <circle cx="270" cy="35" r="8" fill="#4caf50"/>
+  
+  <!-- Content -->
+  <text x="150" y="80" text-anchor="middle" font-size="20" font-weight="bold">Hello, User!</text>
+  
+  <!-- Menu Items -->
+  <rect x="40" y="110" width="220" height="40" fill="#e3f2fd" rx="10"/>
+  <text x="150" y="135" text-anchor="middle">📅 View Calendar</text>
+  
+  <rect x="40" y="160" width="220" height="40" fill="#e8f5e9" rx="10"/>
+  <text x="150" y="185" text-anchor="middle">📋 My Appointments</text>
+  
+  <!-- Appointment List -->
+  <rect x="60" y="210" width="180" height="20" fill="#f5f5f5" rx="5"/>
+  <text x="70" y="225" font-size="12">○ Today 2:00 PM</text>
+  
+  <rect x="60" y="235" width="180" height="20" fill="#f5f5f5" rx="5"/>
+  <text x="70" y="250" font-size="12">○ Wed 10:00 AM</text>
+  
+  <!-- More Menu Items -->
+  <rect x="40" y="270" width="220" height="40" fill="#fff3e0" rx="10"/>
+  <text x="150" y="295" text-anchor="middle">💰 Make Payment</text>
+  
+  <rect x="40" y="320" width="220" height="40" fill="#f3e5f5" rx="10"/>
+  <text x="150" y="345" text-anchor="middle">⚙️ Settings</text>
+  
+  <rect x="40" y="370" width="220" height="40" fill="#e0f2f1" rx="10"/>
+  <text x="150" y="395" text-anchor="middle">❓ Help</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="20" y="430" width="260" height="50" fill="#333" rx="10"/>
+  <text x="60" y="460" fill="white" font-size="12">Home</text>
+  <text x="120" y="460" fill="white" font-size="12">Calendar</text>
+  <text x="190" y="460" fill="white" font-size="12">Profile</text>
+  <text x="250" y="460" fill="white" font-size="12">More</text>
+</svg>
