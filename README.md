@@ -99,3 +99,5 @@ Multiple commits showing progressive development of the HTML structure.
 ![Mobile Design](images/mobile-view.svg)
 
 *Responsive mobile interface for on-the-go booking.*
+
+Last deployed: Wed Jan 28 00:25:00 MST 2026
