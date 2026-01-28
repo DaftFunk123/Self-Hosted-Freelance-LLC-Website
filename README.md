@@ -62,6 +62,37 @@ WebSocket connections will enable real-time features in the application. When a 
 ### Admin Dashboard
 ![Admin Dashboard Design](images/admin-dashboard.svg)
 
+## HTML Deliverable
+
+### Files Created:
+- `index.html` - Main homepage with navigation and all technology placeholders
+- `booking.html` - Appointment booking interface with calendar
+- `admin.html` - Business owner dashboard with statistics
+- `login.html` - User authentication forms
+- `profile.html` - Placeholder for user profiles
+
+### Technology Placeholders Implemented:
+- **Third-party API**: Weather integration section for OpenWeatherMap
+- **Database Data**: Appointment tables showing mock MongoDB data
+- **WebSocket**: Live updates section for real-time notifications
+- **Authentication**: Login/registration forms with user session management
+
+### Design Elements:
+- SVG design sketches embedded on relevant pages:
+  - `landing-page.svg` - Homepage design
+  - `booking-interface.svg` - Calendar booking interface
+  - `admin-dashboard.svg` - Business owner dashboard
+  - `mobile-view.svg` - Mobile responsive design
+
+### Deployment:
+- Live at: https://startup.scheduling.click
+- Deployed using `deployFiles.sh` script
+- All navigation links functional
+- Images loading correctly
+
+### Git Commits:
+Multiple commits showing progressive development of the HTML structure.
+
 *Business owner view showing appointments, revenue, and management controls.*
 
 ### Mobile View
