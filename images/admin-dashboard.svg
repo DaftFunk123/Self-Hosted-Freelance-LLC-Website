@@ -1,0 +1,42 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f9f9f9"/>
+  <rect x="10" y="10" width="580" height="380" fill="white" stroke="#ddd" rx="10"/>
+  
+  <!-- Header -->
+  <text x="20" y="40" font-size="18" font-weight="bold">Admin Dashboard</text>
+  <rect x="450" y="25" width="130" height="25" fill="#ffebee" stroke="#f44336" rx="5"/>
+  <text x="460" y="42">[Notifications 🔔]</text>
+  
+  <!-- Left Column -->
+  <text x="30" y="80" font-size="16" font-weight="bold">TODAY'S STATS</text>
+  <rect x="30" y="90" width="200" height="100" fill="#e8f5e8" stroke="#4caf50" rx="5"/>
+  <text x="40" y="115">Appointments: 5</text>
+  <text x="40" y="140">Revenue: $450</text>
+  <text x="40" y="165">New Clients: 2</text>
+  
+  <text x="30" y="220" font-size="16" font-weight="bold">UPCOMING APPOINTMENTS</text>
+  <rect x="30" y="230" width="200" height="120" fill="#e3f2fd" stroke="#2196f3" rx="5"/>
+  <text x="40" y="255">9:00  - John (Math)</text>
+  <text x="40" y="280">11:00 - Sarah (Bounce)</text>
+  <text x="40" y="305">2:00  - Mike (Music)</text>
+  <text x="40" y="330">3:00  - Emma (Tutor)</text>
+  
+  <!-- Right Column -->
+  <text x="280" y="80" font-size="16" font-weight="bold">QUICK ACTIONS</text>
+  <rect x="280" y="90" width="250" height="120" fill="#fff3e0" stroke="#ff9800" rx="5"/>
+  <rect x="300" y="110" width="210" height="25" fill="#ffcc80" rx="3"/>
+  <text x="310" y="128">[Add Time Slot]</text>
+  <rect x="300" y="140" width="210" height="25" fill="#ffcc80" rx="3"/>
+  <text x="310" y="158">[Send Reminder]</text>
+  <rect x="300" y="170" width="210" height="25" fill="#ffcc80" rx="3"/>
+  <text x="310" y="188">[Create Promo]</text>
+  <rect x="300" y="200" width="210" height="25" fill="#ffcc80" rx="3"/>
+  <text x="310" y="218">[View Reports]</text>
+  
+  <text x="280" y="250" font-size="16" font-weight="bold">RECENT ACTIVITY</text>
+  <rect x="280" y="260" width="250" height="100" fill="#f3e5f5" stroke="#9c27b0" rx="5"/>
+  <text x="290" y="285">✓ Paid - Lisa</text>
+  <text x="290" y="310">⏰ Reminder Sent</text>
+  <text x="290" y="335">📅 Booked - Tom</text>
+  <text x="290" y="360">⚠️ Cancel - Anna</text>
+</svg>

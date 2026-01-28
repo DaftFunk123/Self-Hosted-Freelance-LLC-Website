@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ScheduleSync</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav { background: #f0f8ff; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #2196f3; }
+        .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px 0; }
+        .stat-box { border: 1px solid #ddd; padding: 20px; border-radius: 5px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; }
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="booking.html">📅 Book Appointment</a>
+        <a href="admin.html">⚙️ Admin Dashboard</a>
+        <a href="login.html">🔐 Login</a>
+        <a href="https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website" target="_blank">💻 GitHub</a>
+    </nav>
+    
+    <h1>Admin Dashboard</h1>
+    
+    <section>
+        <h3>📊 Admin Dashboard Design</h3>
+        <img src="images/admin-dashboard.svg" alt="Admin Dashboard Design" width="600">
+        <p><em>Business owner view with statistics, appointments, and controls</em></p>
+    </section>
+    
+    <div class="stats">
+        <div class="stat-box">
+            <h3>Today's Appointments</h3>
+            <p style="font-size: 2em;">5</p>
+        </div>
+        <div class="stat-box">
+            <h3>Revenue Today</h3>
+            <p style="font-size: 2em;">$450</p>
+        </div>
+        <div class="stat-box">
+            <h3>New Clients</h3>
+            <p style="font-size: 2em;">2</p>
+        </div>
+    </div>
+    
+    <section>
+        <h3>📋 Upcoming Appointments</h3>
+        <table>
+            <tr><th>Time</th><th>Service</th><th>Client</th><th>Status</th></tr>
+            <tr><td>9:00 AM</td><td>Math Tutoring</td><td>John</td><td>Confirmed</td></tr>
+            <tr><td>11:00 AM</td><td>Bounce House</td><td>Sarah</td><td>Paid</td></tr>
+            <tr><td>2:00 PM</td><td>Music Lesson</td><td>Mike</td><td>Pending</td></tr>
+        </table>
+    </section>
+    
+    <section>
+        <h3>⚡ Quick Actions</h3>
+        <p><em>Add Time Slot | Send Reminder | Create Promo Code</em></p>
+    </section>
+    
+    <footer>
+        <p>© 2024 ScheduleSync | <a href="https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website">GitHub</a></p>
+    </footer>
+</body>
+</html>

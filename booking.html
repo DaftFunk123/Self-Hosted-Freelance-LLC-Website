@@ -1,0 +1,64 @@
+F<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - ScheduleSync</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav { background: #f0f8ff; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #2196f3; }
+        section { border: 1px solid #ddd; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+        .day { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        .selected { background: #2196f3; color: white; }
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="booking.html">📅 Book Appointment</a>
+        <a href="admin.html">⚙️ Admin Dashboard</a>
+        <a href="login.html">🔐 Login</a>
+        <a href="https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website" target="_blank">💻 GitHub</a>
+    </nav>
+    
+    <h1>Book an Appointment</h1>
+    
+    <section>
+        <h3>📅 Calendar Interface Design</h3>
+        <img src="images/booking-interface.svg" alt="Booking Interface Design" width="600">
+        <p><em>Interactive calendar with service selection and time slots</em></p>
+    </section>
+    
+    <section>
+        <h3>📅 Calendar (Interactive)</h3>
+        <div class="calendar">
+            <div class="day">SUN</div><div class="day">MON</div><div class="day">TUE</div><div class="day">WED</div><div class="day">THU</div><div class="day">FRI</div><div class="day">SAT</div>
+            <div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
+            <div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div>
+            <div class="day">15</div><div class="day">16</div><div class="day selected">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day">21</div>
+        </div>
+    </section>
+    
+    <section>
+        <h3>🎯 Select Service</h3>
+        <p>Math Tutoring | Bounce House Rental | Music Lesson</p>
+    </section>
+    
+    <section>
+        <h3>⏰ Available Times</h3>
+        <p>9:00 AM | 10:00 AM | 2:00 PM | 3:00 PM</p>
+    </section>
+    
+    <section>
+        <h3>📝 Client Information</h3>
+        <p><em>Form for name, email, phone will go here</em></p>
+    </section>
+    
+    <footer>
+        <p>© 2024 ScheduleSync | <a href="https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website">GitHub</a></p>
+    </footer>
+</body>
+</html>

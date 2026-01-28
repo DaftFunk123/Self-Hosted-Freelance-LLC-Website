@@ -1,0 +1,17 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f8ff"/>
+  <rect x="50" y="30" width="500" height="50" fill="#4a90e2" rx="5"/>
+  <text x="300" y="60" text-anchor="middle" fill="white" font-size="24">SCHEDULESYNC</text>
+  <text x="300" y="100" text-anchor="middle" font-size="18">Family Business Scheduler</text>
+  <rect x="150" y="130" width="300" height="200" fill="white" stroke="#ccc" rx="10"/>
+  <text x="300" y="160" text-anchor="middle" font-size="16" font-weight="bold">SELECT BUSINESS TYPE</text>
+  <rect x="180" y="180" width="240" height="30" fill="#f5f5f5" rx="5"/>
+  <text x="190" y="200">[ ] Bounce House Rentals</text>
+  <rect x="180" y="220" width="240" height="30" fill="#f5f5f5" rx="5"/>
+  <text x="190" y="240">[ ] Tutoring Services</text>
+  <rect x="180" y="260" width="240" height="30" fill="#f5f5f5" rx="5"/>
+  <text x="190" y="280">[ ] Other Business</text>
+  <rect x="230" y="300" width="140" height="40" fill="#50c878" rx="5"/>
+  <text x="300" y="325" text-anchor="middle" fill="white">CONTINUE</text>
+  <text x="300" y="370" text-anchor="middle">Already have an account? [LOGIN]</text>
+</svg>
