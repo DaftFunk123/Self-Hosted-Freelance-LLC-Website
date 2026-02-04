@@ -1,5 +1,7 @@
 # ScheduleSync - Smart Business Scheduler
 
+[My Notes](notes.md) 
+
 A comprehensive scheduling application for family-run businesses that handles appointments, payments, and client management automatically.
 
 ## 🚀 Elevator Pitch
@@ -62,7 +64,7 @@ WebSocket connections will enable real-time features in the application. When a 
 ### Admin Dashboard
 ![Admin Dashboard Design](images/admin-dashboard.svg)
 
-## HTML Deliverable
+# 🚀 HTML Deliverable
 
 ### Files Created:
 - `index.html` - Main homepage with navigation and all technology placeholders
@@ -100,4 +102,38 @@ Multiple commits showing progressive development of the HTML structure.
 
 *Responsive mobile interface for on-the-go booking.*
 
-Last deployed: Wed Jan 28 00:25:00 MST 2026
+# 🚀  CSS Deliverable
+
+### What I Did for CSS Deliverable:
+- [x] **CSS Framework**: Added Bootstrap 5.3 via CDN and created custom `framework.css` with utility classes
+- [x] **Custom CSS**: Created `styles.css` with CSS variables, animations, and responsive design
+- [x] **Responsive Design**: Implemented flexbox for navigation and grid for layouts with media queries
+- [x] **Imported Fonts**: Added Google Fonts (Poppins for body, Montserrat for headings)
+- [x] **Selector Variety**: Used element, class, ID, and pseudo-class selectors throughout
+- [x] **Visual Polish**: Added hover effects, animations, shadows, and consistent color scheme
+
+### Files Modified:
+- `styles.css` - Main styles with responsive design and animations
+- `framework.css` - Bootstrap-like utility classes and components
+- `index.html`, `booking.html`, `admin.html`, `login.html` - Updated with CSS links
+
+### CSS Features Implemented:
+- Mobile-responsive navigation (flexbox)
+- Grid-based stats dashboard on admin page
+- Form styling with focus states
+- Table improvements with hover effects
+- Animation on page load (fade-in sections)
+- Hover animations for interactive elements
+
+### Technologies Used:
+- **Bootstrap 5.3** - CSS framework via CDN
+- **Google Fonts** - Poppins and Montserrat
+- **CSS Grid** - For calendar and stats layouts
+- **Flexbox** - For responsive navigation
+- **CSS Variables** - For consistent theming
+- **Media Queries** - For mobile responsiveness
+
+### Deployment:
+- Live at: https://startup.scheduling.click
+- Simon CSS deployed at: https://simon.scheduling.click
+- All CSS files properly linked and loading
