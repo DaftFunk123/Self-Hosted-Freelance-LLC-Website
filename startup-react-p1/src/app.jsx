@@ -21,33 +21,13 @@ export default function App() {
             <div className="navbar-brand">
               ScheduleSync
             </div>
-            <menu className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/booking">
-                  Book Appointment
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/admin">
-                  Admin Dashboard
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/login">
-                  Login
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/profile">
-                  Profile
-                </NavLink>
-              </li>
-            </menu>
+            <div className="navbar-nav ms-auto flex-row gap-3">
+              <NavLink className="nav-link" to="/">Home</NavLink>
+              <NavLink className="nav-link" to="/booking">Book</NavLink>
+              <NavLink className="nav-link" to="/admin">Admin</NavLink>
+              <NavLink className="nav-link" to="/login">Login</NavLink>
+              <NavLink className="nav-link" to="/profile">Profile</NavLink>
+            </div>
           </nav>
         </header>
 
@@ -60,7 +40,7 @@ export default function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
 
-                <footer className="bg-dark text-white-50 mt-auto py-3">
+        <footer className="bg-dark text-white-50 mt-auto py-3">
           <div className="container-fluid text-center">
             <span className="text-white me-3">Jason Funk</span>
             <a className="text-white" href="https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website" target="_blank" rel="noreferrer">
