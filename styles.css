@@ -1,0 +1,18 @@
+/* In YOUR styles.css - INSPIRED by Simon, but CUSTOM for ScheduleSync */
+
+/* Simon uses CSS Grid for game board - You use Grid for stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Simon uses media queries - You use them too */
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Simon imports fonts - You import different fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
