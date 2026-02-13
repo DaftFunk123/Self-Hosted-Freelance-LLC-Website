@@ -2,4 +2,38 @@
   display: flex;
   flex-direction: column;
   min-width: 375px;
+  min-height: 100vh;
+  padding-top: 60px;  /* Add space for fixed navbar */
+}
+
+/* Style the navigation */
+.navbar {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Ensure content isn't hidden behind navbar */
+main {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+/* Make footer stick to bottom */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #343a40;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
