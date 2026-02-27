@@ -1,5 +1,6 @@
 import React from 'react';
 import './Admin.css';
+import { addNotificationListener, startMockNotifications } from '../utils/notifications';
 
 export function Admin({ user }) {
   const [appointments, setAppointments] = React.useState([]);
@@ -9,6 +10,7 @@ export function Admin({ user }) {
     newClients: 0
   });
   const [loading, setLoading] = React.useState(true);
+  const [notifications, setNotifications] = React.useState([]);
 
   // Mock data - simulates an API call
   React.useEffect(() => {
@@ -29,6 +31,19 @@ export function Admin({ user }) {
       
       setLoading(false);
     }, 1000);
+  }, []);
+
+  // Mock WebSocket notifications
+  React.useEffect(() => {
+    const interval = startMockNotifications();
+    const unsubscribe = addNotificationListener((msg) => {
+      setNotifications(prev => [msg, ...prev].slice(0, 5));
+    });
+
+    return () => {
+      clearInterval(interval);
+      unsubscribe();
+    };
   }, []);
 
   function updateAppointmentStatus(id, newStatus) {
@@ -85,6 +100,25 @@ export function Admin({ user }) {
           </div>
         </div>
       </div>
+
+      {/* Live Notifications Panel */}
+      {notifications.length > 0 && (
+        <div className="card mb-4">
+          <div className="card-header bg-info text-white">
+            <h5 className="mb-0">🔔 Live Notifications</h5>
+          </div>
+          <div className="card-body">
+            {notifications.map((notif, index) => (
+              <div key={index} className="alert alert-info alert-dismissible fade show">
+                {notif.type === 'booking' && `📅 ${notif.user} booked ${notif.service} at ${notif.time}`}
+                {notif.type === 'payment' && `💰 ${notif.user} paid $${notif.amount} - ${notif.status}`}
+                {notif.type === 'cancellation' && `❌ ${notif.user} cancelled ${notif.service}`}
+                {notif.type === 'reminder' && `⏰ Reminder: ${notif.user} has ${notif.service} ${notif.time}`}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       
       <section className="my-4">
         <h3>📋 Upcoming Appointments</h3>
