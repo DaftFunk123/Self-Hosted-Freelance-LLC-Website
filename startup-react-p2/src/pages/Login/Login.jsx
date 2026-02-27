@@ -1,44 +1,23 @@
 import React from 'react';
-import { AuthState, saveAuth } from '../utils/auth';
+import { Navigate } from 'react-router-dom';
 
-export function Login({ userName, authState, onAuthChange }) {
-  const [username, setUsername] = React.useState('');
+export function Login({ onLogin }) {
+  const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  const [message, setMessage] = React.useState('');
+  const [submitted, setSubmitted] = React.useState(false);
 
-  const mockUsers = {
-    'admin': 'admin123',
-    'jason': 'password',
-    'demo': 'demo'
-  };
-
-  function handleLogin(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    
-    if (mockUsers[username] && mockUsers[username] === password) {
-      saveAuth(username);
-      onAuthChange(username, AuthState.Authenticated);
-      setMessage('');
-    } else {
-      setMessage('Invalid username or password');
+    // For now, just use the email as the username
+    // In a real app, you'd validate against a backend
+    if (email.trim()) {
+      onLogin(email.split('@')[0]); // Use the part before @ as username
+      setSubmitted(true);
     }
   }
 
-  if (authState === AuthState.Authenticated) {
-    return (
-      <main className="container mt-5 pt-5" style={{ maxWidth: '400px' }}>
-        <div className="card p-4">
-          <h2 className="text-center mb-4">Welcome back, {userName}!</h2>
-          <p className="text-center">You are successfully logged in.</p>
-          <button 
-            className="btn btn-primary mt-3"
-            onClick={() => onAuthChange('', AuthState.Unauthenticated)}
-          >
-            Logout
-          </button>
-        </div>
-      </main>
-    );
+  if (submitted) {
+    return <Navigate to="/" />;
   }
 
   return (
@@ -47,18 +26,17 @@ export function Login({ userName, authState, onAuthChange }) {
       
       <div className="card p-4">
         <h3>Login</h3>
-        {message && <div className="alert alert-danger">{message}</div>}
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label">Username</label>
+            <label className="form-label">Email</label>
             <div className="input-group">
               <span className="input-group-text">@</span>
               <input 
-                type="text" 
+                type="email" 
                 className="form-control" 
-                placeholder="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                placeholder="your@email.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -66,7 +44,7 @@ export function Login({ userName, authState, onAuthChange }) {
           <div className="mb-3">
             <label className="form-label">Password</label>
             <div className="input-group">
-              <span className="input-group-text">í´’</span>
+              <span className="input-group-text">ðŸ”’</span>
               <input 
                 type="password" 
                 className="form-control" 
@@ -79,11 +57,20 @@ export function Login({ userName, authState, onAuthChange }) {
           </div>
           <div className="d-flex gap-2">
             <button type="submit" className="btn btn-primary flex-grow-1">Login</button>
+            <button 
+              type="button" 
+              className="btn btn-secondary flex-grow-1"
+              onClick={() => {
+                // For demo, create a demo account with random name
+                const demoUser = `user${Math.floor(Math.random() * 1000)}`;
+                onLogin(demoUser);
+                setSubmitted(true);
+              }}
+            >
+              Create Account
+            </button>
           </div>
         </form>
-        <div className="mt-3 text-muted small">
-          <p>Demo users: admin/admin123, jason/password, demo/demo</p>
-        </div>
       </div>
     </main>
   );
