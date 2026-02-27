@@ -1,0 +1,54 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100vh;
+  padding-top: 70px;  /* Increased padding to clear fixed navbar */
+}
+
+/* Style the navigation */
+.navbar {
+  padding: 1rem;
+  height: 70px;  /* Fixed height for consistency */
+  background-color: #0d6efd !important;  /* Bootstrap primary blue */
+}
+
+/* Ensure content starts below navbar */
+main {
+  margin-top: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Make footer stick to bottom */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #343a40;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Card styling for profile page */
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card p {
+  margin: 0;
+  padding: 1rem;
+}
