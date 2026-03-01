@@ -4,6 +4,15 @@
 
 A comprehensive scheduling application for family-run businesses that handles appointments, payments, and client management automatically.
 
+## ✅ Prerequisites Met
+- **Simon React deployed:** https://simon.scheduling.click (Fully interactive with login, game play, and scores)
+- **GitHub link:** https://github.com/DaftFunk123/Self-Hosted-Freelance-LLC-Website (in footer of all pages)
+- **Git commits:** 10+ commits per deliverable
+
+## 🌐 Live Sites
+- **Simon React (Prerequisite):** https://simon.scheduling.click
+- **Startup React (Main Deliverable):** https://startup.scheduling.click
+
 ## 🚀 Elevator Pitch
 
 ScheduleSync is the smart scheduling assistant for family-run businesses. Imagine having a personal secretary who manages your appointments, sends automatic reminders, enforces your policies, and processes payments—all while you focus on delivering exceptional service. Whether you're renting bounce houses, tutoring students, or running any service-based business, ScheduleSync eliminates scheduling headaches and ensures you never miss a booking or payment again.
@@ -175,7 +184,7 @@ Multiple commits showing progressive development of the HTML structure.
 ### Deployment:
 - **Simon React**: https://simon.scheduling.click
 - **Startup React**: https://startup.scheduling.click
-- **Deployment Script**: `./deployReact.sh -k key.pem -h 3.228.52.79 -s startup`
+- **Deployment Script**: `./deployReact.sh -k /c/Users/HP/Downloads/funkberry.pem -h scheduling.click -s startup`
 
 ### Git Commits:
 Multiple commits over several days showing progressive development of the React conversion.
@@ -183,6 +192,13 @@ Multiple commits over several days showing progressive development of the React 
 
 
 # 🚀 React Phase 2 Deliverable
+
+### 📱 What Users Can Now Do
+- **Login:** Demo accounts: `admin/admin123`, `jason/password`, `demo/demo`
+- **Home Page:** Welcome message + persistent visit counter
+- **Booking:** Multi-step form to schedule appointments
+- **Admin Dashboard:** View/edit appointments + live mock notifications
+- **Profile:** Edit and save user information
 
 ### What I Did for React Phase 2:
 - [x] **Authentication System**: Implemented login/logout with `useState` and `localStorage`
